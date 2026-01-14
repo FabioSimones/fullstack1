@@ -4,6 +4,6 @@ import br.com.jtech.tasklist.core.domain.Task;
 
 import java.util.List;
 
-public interface ListAllTaskUseCase {
+public interface ListAllTasksUseCase {
     List<Task> execute();
 }
