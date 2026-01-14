@@ -1,4 +1,37 @@
 version: '3.0'
+
 services:
+  postgres:
+    image: postgres:16
+    container_name: postgres_tasklist
+    restart: always
+    environment:
+      POSTGRES_DB: task_database
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - dev-services
+
+  pgadmin:
+    image: dpage/pgadmin4:latest
+    container_name: pgadmin_tasklist
+    restart: always
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@jtech.com
+      PGADMIN_DEFAULT_PASSWORD: admin
+    ports:
+      - "8081:80"
+    depends_on:
+      - postgres
+    networks:
+      - dev-services
+
 networks:
   dev-services:
+
+volumes:
+  postgres_data:
