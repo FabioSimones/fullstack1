@@ -5,8 +5,8 @@ import jakarta.validation.constraints.NotBlank;
 import lombok.*;
 
 @Data
-@NoArgsConstructor
 @AllArgsConstructor
+@NoArgsConstructor
 @Builder
 public class CreateTaskRequestDTO {
 

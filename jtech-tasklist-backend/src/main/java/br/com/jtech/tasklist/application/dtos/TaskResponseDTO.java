@@ -4,8 +4,8 @@ import br.com.jtech.tasklist.core.domain.enums.StatusEnum;
 import lombok.*;
 
 @Data
-@NoArgsConstructor
 @AllArgsConstructor
+@NoArgsConstructor
 @Builder
 public class TaskResponseDTO {
 
