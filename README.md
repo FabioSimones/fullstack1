@@ -118,6 +118,25 @@ Password: admin
 ### DELETE /tasks/{id} → remover tarefa
 <img width="850" height="600" alt="image" src="https://github.com/user-attachments/assets/0c7c332d-128d-48ef-b7a8-091fc3a9935c" />
 
+### Nota: É possivel fazer o acesso aos endpoints utilizando o Swagger:
+```bash
+http://localhost:8080/swagger-ui/index.html#/
+````
+<img width="1300" height="550" alt="image" src="https://github.com/user-attachments/assets/78fc2df3-e199-4209-bf77-3b323f19d5f0" />
+
+
+---
+## Exceções personalizadas
+
+### 404 Not Found
+<img width="850" height="600" alt="image" src="https://github.com/user-attachments/assets/eb895a41-0a7b-47a0-a9b2-3449bd43d97a" />
+
+### 404 Not Found
+<img width="850" height="600" alt="image" src="https://github.com/user-attachments/assets/fcbc77d9-ce46-4893-ad7f-1e89623a7639" />
+
+### 400 Bad Request
+<img width="850" height="600" alt="image" src="https://github.com/user-attachments/assets/2ea3a1c1-62b2-451f-a9d6-e6f493d6b774" />
+
 ---
 # 🖥️ Frontend — TODO List | JTech Challenge
 
@@ -258,6 +277,20 @@ npm run dev
 ```text
 http://localhost:5173
 ```
+---
+## 🎨 Visual da aplicação
+### Tela inicial listando tarefas:
+<img width="1000" height="500" alt="image" src="https://github.com/user-attachments/assets/46fa73c3-dba3-412b-b3b0-7bc69bd05ba7" />
+
+### Criando nova tarefa:
+<img width="500" height="470" alt="image" src="https://github.com/user-attachments/assets/cd72016b-2d2e-4874-b20e-6e14c0a6cc29" />
+
+### Editar tarefa:
+<img width="500" height="470" alt="image" src="https://github.com/user-attachments/assets/b56a4f6a-16ef-4301-9b44-c43e7742697c" />
+
+### Deletando tarefa
+<img width="1000" height="500" alt="image" src="https://github.com/user-attachments/assets/fdd5a4de-d7e2-42da-94b1-b3eb4d9ae74e" />
+
 ---
 
 ## 🧪 Observações Técnicas
