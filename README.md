@@ -300,7 +300,18 @@ http://localhost:5173
 - Código escrito utilizando Composition API e práticas modernas do Vue 3
 ---
 
-## 📌 Considerações Finais
+# 💡 Sugestões de melhorias
+De uam maneira geral acabei pensando em melhorias quanto a projetos empresariais, 
+sendo um deles a criação de usuário ADMIN e do tipo NORMAL, dando a condição do ADMIN
+delegar tarefas que serão executados pelos demais. Podemos até acrescentar campos para
+monitorar o tempo que se leva para executar determinadas tarefas, adicionando na classe
+Task um atributo createdAt e updatedAt, fazendo salvar a data que o ADMIN criou o mesmo
+e dando a liberdade apenas para o NORMAL atualizar o campo que estaria em PENDENTE, para CONCLUÍDA.
+Também não podemos descartar a idéia de deixar o usuário NORMAL comentar como executou e
+o que precisou para executar a tarefa.
+
+---
+# 📌 Considerações Finais
 
 Este projeto foi desenvolvido como parte de um desafio técnico,
 com foco em boas práticas de desenvolvimento, organização de código,
