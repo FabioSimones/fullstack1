@@ -57,13 +57,18 @@ src/main/java/com/jtech/todolist
 
 ### Passos
 # Clonar o repositório
+
+```bash
 git clone https://github.com/seu-usuario/tasklist-api.git
 cd tasklist-api
-
+```
 ### Executar a aplicação
+```bash
 ./gradlew bootRun
+```
+- Pode-se também executar a classe **StartTasklist** encontrada na raiz do projeto.
 
-# A aplicação está disponível em:
+### A aplicação está disponível em:
 ```bash
 http://localhost:8080
 ```
@@ -73,21 +78,45 @@ http://localhost:8080
 ### Você pode rodar a aplicação e o banco de dados via Docker para simplificar a configuração.
 
 ```bash
-docker-compose up --build
+docker compose up -d
 ```
+
+### Você pode acessar o banco de dados como teste para ver se foi criado sua tabela, pode utilizar seu navegador como demonstro a seguir:
+
+```bash
+http://localhost:8081/login
+
+Login: admin@jtech.com
+Password: admin
+
+```
+
+### Aqui será necessário a criação da conexão, podendo seguir meu exemplo de imagens abaixo:
+<img width="650" height="600" alt="image" src="https://github.com/user-attachments/assets/6d4c7f6f-4e02-4723-bd8a-fec0e678abec" />
+<img width="650" height="600" alt="image" src="https://github.com/user-attachments/assets/95bb3751-c669-4e6c-8fc6-caf671c868ed" />
+
+### Agora basta navega até encontrar a aba de tabelas, que está encontrado em public:
+<img width="235" height="217" alt="image" src="https://github.com/user-attachments/assets/fa597bb0-f8ec-4dac-a684-ba27b41c23c8" />
+
+
 ---
 
 ## 📬 Testes manuais com Postman
 
 ### POST /tasks → criar tarefa
+<img width="850" height="600" alt="image" src="https://github.com/user-attachments/assets/a8d3044a-49e2-4e50-96a8-f93add44e6d3" />
 
 ### GET /tasks → listar tarefas
+<img width="850" height="600" alt="image" src="https://github.com/user-attachments/assets/55d5a296-1efa-471f-ae74-ad17f262eb11" />
 
 ### GET /tasks/{id} → buscar tarefa específica
+<img width="850" height="600" alt="image" src="https://github.com/user-attachments/assets/c74a43b2-19e3-4547-bf7d-e6ab757a9192" />
 
 ### PUT /tasks/{id} → atualizar tarefa
+<img width="850" height="600" alt="image" src="https://github.com/user-attachments/assets/7c17d6af-9c29-4ddf-a7ae-bcc4e4728313" />
 
 ### DELETE /tasks/{id} → remover tarefa
+<img width="850" height="600" alt="image" src="https://github.com/user-attachments/assets/0c7c332d-128d-48ef-b7a8-091fc3a9935c" />
 
 ---
 # 🖥️ Frontend — TODO List | JTech Challenge
